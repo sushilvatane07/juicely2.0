@@ -32,11 +32,11 @@ Plain HTML, CSS, and vanilla JavaScript. No frameworks, no npm install, no build
 
 ```
 juicely/
+├── pages ├── about.html       # Full About page
+          ├── faq.html         # FAQ page
+          ├── privacy.html      # Privacy policy page
+          └── terms.html        # Terms & conditions page
 ├── index.html      # Home page — hero, products, packs, stats, about teaser
-├── about.html       # Full About page
-├── faq.html         # FAQ page
-├── privacy.html      # Privacy policy page
-├── terms.html        # Terms & conditions page
 ├── style.css         # All shared styling (design tokens live in :root)
 ├── script.js         # Nav, cart logic, product flip, stat counters, toasts
 └── README.md
@@ -57,7 +57,7 @@ const PRODUCTS = {
 
 Make sure any change here also matches the price shown on that product's card in `index.html`.
 
-**Colors & fonts** — all design tokens (`--cream`, `--orange`, `--pink`, `--gold`, fonts, etc.) are defined once at the top of `style.css` under `:root`.
+**Colors & fonts** — all design tokens (`--cream`, `--hero-blue`, `--pink`, `--gold`, fonts, etc.) are defined once at the top of `style.css` under `:root`.
 
 **Cart persistence** — the cart currently lives in memory only (`let cart = {}` in `script.js`) and resets on page reload. There's no backend, so nothing is actually charged or stored.
 
